@@ -1,0 +1,47 @@
+{
+  "name": "tdd-kata",
+  "version": "1.0.0",
+  "description": "TDD kata exercises to get those test driven brain synapses firing",
+  "main": "src/index.js",
+  "homepage": "https://github.com/idiq-ppd/tdd-kata",
+  "readme": "https://github.com/idiq-ppd/tdd-kata#readme",
+  "repository": "https://github.com/idiq-ppd/tdd-kata.git",
+  "author": "Kris Triplett <ktriplett@idiq.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "xo": "^0.28.0"
+  },
+  "scripts": {
+    "test": "xo 'src/**/*.js' && jest --coverage",
+    "watch": "jest --watch"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "xo": {
+    "space": true,
+    "env": [
+      "node",
+      "jest"
+    ],
+    "rules": {
+      "arrow-parens": "as-needed",
+      "object-curly-spacing": "always"
+    }
+  }
+}
