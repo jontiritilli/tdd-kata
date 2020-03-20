@@ -12,9 +12,16 @@ Which means the workflow is:
 
 ## Usage
 
-To run the tests, run `yarn test`.
+Before you start, create a new branch off master for your work.
+Install dependencies by running `yarn install` or `npm install`
+To run the tests, run `yarn test` or `npm run test`
+While you're writing tests, run `yarn watch` or `npm run watch` so your tests run while your write code.
 
 # Katas
+
+The purpose of these exercises is to put your mind into the red/green/refactor mindset. You should start each day of writing code by performing these katas. This means you'll likely memorize them after you've done them enough times. That's ok, it's not meant to test your programming skills, it's to get you started with work in the correct mindset.
+
+When you're first getting started with TDD and these katas, pick either the `Greeter` or `StringCalculator` and do one of them. As you progress, attempt the others. The `PrimeFactors` and `BowlingGame` have an accompanying powerpoint from Uncle Bob. You can follow along with that, though you'll have to parse the difference between his Java code and the Javascript code you'll need to write.
 
 ## Greeter
 
