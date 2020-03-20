@@ -10,7 +10,10 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
     "jest": "^25.1.0",
     "xo": "^0.28.0"
   },
@@ -19,6 +22,9 @@
     "watch": "jest --watch"
   },
   "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
     "roots": [
       "<rootDir>/node_modules/",
       "<rootDir>/src/"
