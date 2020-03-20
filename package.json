@@ -10,6 +10,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "jest": "^25.1.0",
     "xo": "^0.28.0"
   },
