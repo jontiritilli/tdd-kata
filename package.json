@@ -41,8 +41,14 @@
       "jest"
     ],
     "rules": {
-      "arrow-parens": "as-needed",
-      "object-curly-spacing": "always"
+      "arrow-parens": [
+        2,
+        "as-needed"
+      ],
+      "object-curly-spacing": [
+        2,
+        "always"
+      ]
     }
   }
 }
