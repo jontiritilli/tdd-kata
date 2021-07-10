@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDKata.Test", "TDDKata.Test\TDDKata.Test.csproj", "{AEBD4264-1A69-4C15-9757-8B528B92759E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDKata", "TDDKata\TDDKata.csproj", "{F6C38F61-ADE2-4F1C-88FE-EFB853FB68F8}"
 EndProject
 Global
@@ -10,10 +8,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AEBD4264-1A69-4C15-9757-8B528B92759E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEBD4264-1A69-4C15-9757-8B528B92759E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEBD4264-1A69-4C15-9757-8B528B92759E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEBD4264-1A69-4C15-9757-8B528B92759E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F6C38F61-ADE2-4F1C-88FE-EFB853FB68F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F6C38F61-ADE2-4F1C-88FE-EFB853FB68F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6C38F61-ADE2-4F1C-88FE-EFB853FB68F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
