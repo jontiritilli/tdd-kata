@@ -1,4 +1,4 @@
-namespace TDDKata
+namespace TDDKata.StringCalculator
 {
     public class StringCalculator
     {
