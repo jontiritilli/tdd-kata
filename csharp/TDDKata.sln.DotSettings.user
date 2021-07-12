@@ -1,4 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=296fef57_002Dc82d_002D4caa_002D8d31_002D67b91ec38f6e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from GreeterTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/nicholasolsen/projects/idiq-ppd/tdd-kata-csharp/TDDKata/TDDKata.Test" Presentation="&amp;lt;TDDKata.Test&amp;gt;" /&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::F6C38F61-ADE2-4F1C-88FE-EFB853FB68F8::net5.0::TDDKata.Example.BlogTests.TestToString&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

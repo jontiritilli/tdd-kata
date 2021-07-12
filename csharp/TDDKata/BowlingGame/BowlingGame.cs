@@ -1,4 +1,4 @@
-namespace TDDKata
+namespace TDDKata.BowlingGame
 {
     public class BowlingGame
     {

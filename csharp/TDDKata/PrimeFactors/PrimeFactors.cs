@@ -1,4 +1,4 @@
-namespace TDDKata
+namespace TDDKata.PrimeFactors
 {
     public class PrimeFactors
     {

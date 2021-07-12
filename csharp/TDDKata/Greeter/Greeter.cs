@@ -1,4 +1,4 @@
-﻿namespace TDDKata
+﻿namespace TDDKata.Greeter
 {
     public class Greeter
     {

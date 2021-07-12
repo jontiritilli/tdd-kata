@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace TDDKata.Test
+namespace TDDKata.Example
 {
     public class BlogTests
     {

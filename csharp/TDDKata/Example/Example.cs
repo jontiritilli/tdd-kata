@@ -1,6 +1,6 @@
 using System.Collections.Immutable;
 
-namespace TDDKata
+namespace TDDKata.Example
 {
     public class Blog
     {
