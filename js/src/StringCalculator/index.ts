@@ -11,7 +11,7 @@ export class StringCalculator {
 
         const numbers = this.GetNumbersArray(input)
         return numbers.reduce((acc: number, number: number): number => {
-                return acc += number
+            return acc += number
             }, 0)
     }
     GetNumbersArray(input: string): number[] {
