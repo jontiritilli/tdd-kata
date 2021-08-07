@@ -10,6 +10,7 @@ export class StringCalculator {
             return parseInt(input)
 
         const numbers = this.GetNumbersArray(input)
+        this.ValidateNumbers(numbers)
         return numbers.reduce((acc: number, number: number): number => {
             return acc += number
             }, 0)
@@ -18,5 +19,10 @@ export class StringCalculator {
         input = input.replace('\n', ',')
         const numbers = input.split(',').map(num => parseInt(num))
         return numbers
+    }
+    ValidateNumbers(input: number[]): void {
+        const negativeNumbers = input.filter(num => num < 0)
+        if (negativeNumbers.length)
+            throw new Error('illegal characters. ensure all values are positive integers')
     }
 }

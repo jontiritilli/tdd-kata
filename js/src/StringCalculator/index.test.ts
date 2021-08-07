@@ -22,4 +22,7 @@ describe('String Calculator test kata', (): void => {
         const result = _calculator.Add('1\n2, 3')
         expect(result).toBe(6)
     })
+    test('Negative numbers throw an exception with the message ', () => {
+        expect(() =>{_calculator.Add('1\n2, -1')}).toThrow('illegal characters. ensure all values are positive integers')
+    })
 })
