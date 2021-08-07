@@ -3,63 +3,31 @@
   "version": "1.0.0",
   "description": "TDD kata exercises to get those test driven brain synapses firing",
   "main": "src/index.js",
-  "homepage": "https://github.com/idiq-ppd/tdd-kata",
-  "readme": "https://github.com/idiq-ppd/tdd-kata#readme",
-  "repository": "https://github.com/idiq-ppd/tdd-kata.git",
-  "author": "Kris Triplett <ktriplett@idiq.com>",
   "license": "MIT",
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^26.0.24",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.1.0",
     "jest": "^25.1.0",
-    "xo": "^0.28.0"
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5"
   },
   "scripts": {
-    "test": "xo 'src/**/*.js' && jest --coverage",
-    "watch": "jest --watch"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    },
-    "roots": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/src/"
-    ],
-    "resetMocks": true,
-    "resetModules": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
-  },
-  "xo": {
-    "space": true,
-    "env": [
-      "node",
-      "jest"
-    ],
-    "rules": {
-      "arrow-parens": [
-        2,
-        "as-needed"
-      ],
-      "object-curly-spacing": [
-        2,
-        "always"
-      ],
-      "quotes": 0,
-      "one-var": 0
-    }
+    "build": "tsc",
+    "test": "yarn test:coverage && yarn test:watch",
+    "test:watch": "jest --watch --verbose",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "global": "^4.4.0",
+    "lodash": "^4.17.15",
+    "ts-jest": "^27.0.4",
+    "tsc": "^2.0.3"
   }
 }

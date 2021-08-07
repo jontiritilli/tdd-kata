@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "declaration": true,
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "noEmit": true,
+      "paths": {
+        "types/*": ["src/types/*"],
+        "types": ["src/types/index.d.ts"]
+      },
+      "typeRoots": ["node_modules/@types", "src/types"],
+      "resolveJsonModule": true,
+      "sourceMap": true
+    },
+    "exclude": ["node_modules"]
+  }
