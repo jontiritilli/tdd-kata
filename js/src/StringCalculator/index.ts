@@ -18,7 +18,7 @@ export class StringCalculator {
     GetNumbersArray(input: string): number[] {
         input = input.replace('\n', ',')
         const numbers = input.split(',').map(num => parseInt(num))
-        return numbers
+        return numbers.filter(num => num <= 1000)
     }
     ValidateNumbers(input: number[]): void {
         const negativeNumbers = input.filter(num => num < 0)

@@ -25,4 +25,8 @@ describe('String Calculator test kata', (): void => {
     test('Negative numbers throw an exception with the message ', () => {
         expect(() =>{_calculator.Add('1\n2, -1')}).toThrow('illegal characters. ensure all values are positive integers')
     })
+    test('Numbers greater than 1000 are ignored', () => {
+        const result = _calculator.Add('1\n2, 1001')
+        expect(result).toBe(3)
+    })
 })
