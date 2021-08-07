@@ -9,9 +9,14 @@ export class StringCalculator {
         if (input.length < 2)
             return parseInt(input)
 
-        return input.split(',')
-            .reduce((acc: number, number: string): number => {
-                return acc += parseInt(number)
+        const numbers = this.GetNumbersArray(input)
+        return numbers.reduce((acc: number, number: number): number => {
+                return acc += number
             }, 0)
+    }
+    GetNumbersArray(input: string): number[] {
+        input = input.replace('\n', ',')
+        const numbers = input.split(',').map(num => parseInt(num))
+        return numbers
     }
 }
