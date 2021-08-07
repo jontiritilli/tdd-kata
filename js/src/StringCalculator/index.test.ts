@@ -14,9 +14,12 @@ describe('String Calculator test kata', (): void => {
         const result = _calculator.Add('1,2')
         expect(result).toBe(3)
     })
-    
     test('Two numbers, newline delimited, returns the sum', () => {
         const result = _calculator.Add('1\n2')
         expect(result).toBe(3)
+    })
+    test('Three numbers, delimited either way, returns the sum', () => {
+        const result = _calculator.Add('1\n2, 3')
+        expect(result).toBe(6)
     })
 })
