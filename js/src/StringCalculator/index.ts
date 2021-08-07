@@ -6,6 +6,9 @@ export class StringCalculator {
         return this.Sum(input)
     }
     Sum(input: string): number {
-        return 0
+        if (input.length < 2)
+            return parseInt(input)
+        
+        throw new Error('illegal input')
     }
 }
