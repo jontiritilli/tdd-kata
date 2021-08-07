@@ -8,7 +8,10 @@ export class StringCalculator {
     Sum(input: string): number {
         if (input.length < 2)
             return parseInt(input)
-        
-        throw new Error('illegal input')
+
+        return input.split(',')
+            .reduce((acc: number, number: string): number => {
+                return acc += parseInt(number)
+            }, 0)
     }
 }

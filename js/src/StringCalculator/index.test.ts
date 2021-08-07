@@ -10,4 +10,8 @@ describe('String Calculator test kata', (): void => {
         const result = _calculator.Add('1')
         expect(result).toBe(1)
     })
+    test('Two numbers, comma delimited, returns the sum', () => {
+        const result = _calculator.Add('1,2')
+        expect(result).toBe(3)
+    })
 })
