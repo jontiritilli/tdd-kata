@@ -33,4 +33,8 @@ describe('String Calculator test kata', (): void => {
         const result = _calculator.Add('//#\n1#2#1001')
         expect(result).toBe(3)
     })
+    test('number, user defined multi char delimited, returns a sum', () => {
+        const result = _calculator.Add('//###\n1###2###1001')
+        expect(result).toBe(3)
+    })
 })

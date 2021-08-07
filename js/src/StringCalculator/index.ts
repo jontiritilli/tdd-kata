@@ -10,7 +10,7 @@ export class StringCalculator {
             return parseInt(input)
 
         const numbers = this.GetNumbersArray(input)
-        
+
         this.ValidateNumbers(numbers)
         return numbers.reduce((acc: number, number: number): number => {
             return acc += number
@@ -29,7 +29,6 @@ export class StringCalculator {
     }
     ReplaceDelimiters(input: string): string {
         const isCustomDelimiter = input.startsWith('//')
-        console.log({isCustomDelimiter})
         if (isCustomDelimiter) {
             const delimiter = input.slice(2, input.indexOf('\n'))
             return input.substr(3 + delimiter.length).replace(delimiter, ',')
