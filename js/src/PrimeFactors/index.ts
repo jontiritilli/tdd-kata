@@ -1,3 +1,3 @@
 export const getPrimeFactors = (input: number): number[] => {
-   return input == 2 ? [2] : []
+   return input > 1 ? [input] : []
 }
