@@ -13,9 +13,9 @@ describe('prime factor generator',  () => {
     it('should return [2,2] for 4', () => {
         expect(getPrimeFactors(4)).toEqual([2,2])
     })
-    // it('it should return [5] for 5', ()=>{
-    //     expect(getPrimeFactors(5)).toEqual([5])
-    // })
+    it('it should return [5] for 5', ()=>{
+        expect(getPrimeFactors(5)).toEqual([5])
+    })
     // it('it should return [2,3] for 6', ()=>{
     //     expect(getPrimeFactors(6)).toEqual([2,3])
     // })
