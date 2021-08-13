@@ -1,7 +1,3 @@
-export const generate = (input: number): number[] => {
-    if (input < 2) 
-        return []
-    if (input % 2 == 0) {
-        return [input]
-    }
+export const getPrimeFactors = (input: number): number[] => {
+   return input == 2 ? [2] : []
 }
