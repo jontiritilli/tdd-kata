@@ -22,9 +22,9 @@ describe('prime factor generator',  () => {
     it('should return [7] for 7', ()=>{
         expect(getPrimeFactors(7)).toEqual([7])
     })
-    // it('should return [2,2,2] for 8', ()=>{
-    //     expect(getPrimeFactors(8)).toEqual([2,2,2])
-    // })
+    it('should return [2,2,2] for 8', ()=>{
+        expect(getPrimeFactors(8)).toEqual([2,2,2])
+    })
     // it('should return [3,3] for 9', ()=>{
     //     expect(getPrimeFactors(9)).toEqual([3,3])
     // })

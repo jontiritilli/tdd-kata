@@ -72,7 +72,7 @@ Made popular by [Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.ThePrimeFac
 
 This kata demonstrates the [`transformation priority premise`](https://en.wikipedia.org/wiki/Transformation_Priority_Premise).
 
-Write a function `generate` that, given an integer, returns the list
+Write a function `getPrimeFactors` that, given an integer, returns the list
 containing the prime factors in numerical sequence.
 
 - 1 should return `[]`
