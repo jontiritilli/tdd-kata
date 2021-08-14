@@ -1,13 +1,8 @@
 export const getPrimeFactors = (input: number): number[] => {
     let number = input
     const factors = []
-    
-    if (number > 1) {
-        for (; number % 2 === 0; number /= 2) {
-            factors.push(2)
-        }
-        if (number > 1)
-            factors.push(number)
+    for (let divisor = 2; number > 1; divisor++) {
+        for (; number % divisor === 0; number /= divisor) factors.push(divisor)
     }
     return factors
 }
