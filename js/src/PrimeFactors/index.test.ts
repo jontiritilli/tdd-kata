@@ -28,7 +28,7 @@ describe('prime factor generator',  () => {
     it('should return [3,3] for 9', ()=>{
         expect(getPrimeFactors(9)).toEqual([3,3])
     })
-    // it('should return [2,2,3,5,7,11] for 4620', ()=>{
-    //     expect(getPrimeFactors(4620)).toEqual([2,2,3,5,7,11])
-    // })
+    it('should return [2,2,3,5,7,11] for 4620', ()=>{
+        expect(getPrimeFactors(4620)).toEqual([2,2,3,5,7,11])
+    })
 })
