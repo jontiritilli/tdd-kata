@@ -1,33 +1,37 @@
-## The Three Rules of TDD
+# Test Driven Development (TDD)
+A repository dedicated to the practice and mastery of Test Driven Development
 
-1. You are not allowed to write any production code unless it is to make a failing unit test pass.
-2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
-3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
+## Three Rules of TDD
+You are not allowed to write:
+1. Any production code unless it is to make a failing unit test pass
+1. More of a unit test than is sufficient to fail; and compilation failures are failures
+1. More production code than is sufficient to pass the one failing unit test
 
 Which means the workflow is:
 
-1. Write a failing test. Stop writing the test as soon as it fails.
-2. Write the minimal production code required for the test to pass. Stop writing any code once the test passes.
-3. Refactor the test code and the production code without altering the functionality. All tests should pass.
+1. Write a failing test. Stop writing the test as soon as it fails
+1. Write the minimal production code required for the test to pass. Stop writing any code once the test passes
+1. Refactor the test code and the production code without altering the functionality. All tests should pass
 
-## Usage
+## Katas
 
-There is a `js` directory for javascript, and a `csharp` directory for C#. Each directory has a README with usage information on how to get started with that language.
+### [Typescript]('./Typescript/readme.md)
 
-# Katas
+
+### [C#]('./csharp/reeadme.md)
 
 The purpose of these exercises is to put your mind into the red/green/refactor mindset. You should start each day of writing code by performing these katas. This means you'll likely memorize them after you've done them enough times. That's ok, it's not meant to test your programming skills, it's to get you started with work in the correct mindset.
 
 When you're first getting started with TDD and these katas, pick either the `Greeter` or `StringCalculator` and do one of them. As you progress, attempt the others. The `PrimeFactors` and `BowlingGame` have an accompanying powerpoint from Uncle Bob. You can follow along with that, though you'll have to parse the difference between his Java code and the Javascript code you'll need to write.
 
-## Greeter
-
-#### Before you start:
+### Before you start:
 
 - **Try not to read ahead.**
 - **Do one task at a time. The trick is to learn to work incrementally.**
 
-This kata demonstrates the problems of static scoped functions and objects.
+### Greeter
+
+***This kata demonstrates the problems of static scoped functions and objects.***
 
 All tests should always pass, regardless of environment conditions.
 
@@ -43,34 +47,30 @@ All tests should always pass, regardless of environment conditions.
 
 Made popular by [Roy Osherove](http://osherove.com/tdd-kata-1/).
 
-#### Before you start:
+**Make sure you only test for correct inputs. there is no need to test for invalid inputs for this kata**
 
-- **Try not to read ahead.**
-- **Do one task at a time. The trick is to learn to work incrementally.**
-- **Make sure you only test for correct inputs. there is no need to test for invalid inputs for this kata**
-
-This kata is one of the simplest and best ways to practice step-by-step fluent tdd, and provides an easy way to get proficient in a language.
+***This kata is one of the simplest and best ways to practice step-by-step fluent tdd, and provides an easy way to get proficient in a language.***
 
 Write a method `add` under an object `StringCalculator` that, given a delimited string, returns the sum of the numbers in the string.
 
 1. An empty string returns zero `'' => 0`
-2. A single number returns the value `'1' => 1` `'2' => 2`
-3. Two numbers, comma delimited, returns the sum `'1,2' => 3` `'10,20' => 30`
-4. Two numbers, newline delimited, returns the sum `'1\n2' => 3`
-5. Three numbers, delimited either way, returns the sum `'1\n2,3\n4' => 10`
-6. Negative numbers throw an exception with the message `'-1,2,-3' => 'negatives not allowed: -1,-3'`
+1. A single number returns the value `'1' => 1` `'2' => 2`
+1. Two numbers, comma delimited, returns the sum `'1,2' => 3` `'10,20' => 30`
+1. Two numbers, newline delimited, returns the sum `'1\n2' => 3`
+1. Three numbers, delimited either way, returns the sum `'1\n2,3\n4' => 10`
+1. Negative numbers throw an exception with the message `'-1,2,-3' => 'negatives not allowed: -1,-3'`
 
-**stop here if you are a beginner. Continue if you can finish the steps so far in less than 30 minutes.**
+    ***Continue if you can finish the steps so far in less than 30 minutes.***
 
-7. Numbers greater than 1000 are ignored
-8. A single char delimiter can be defined on the first line starting with `//` (e.g `//#\n1#2` for a ‘#’ as the delimiter)
-9. A multi char delimiter can be defined on the first line starting with `//` (e.g. `//###\n1###2` for ‘###’ as the delimiter)
+1. Numbers greater than 1000 are ignored
+1. A single char delimiter can be defined on the first line starting with `//` (e.g `//#\n1#2` for a ‘#’ as the delimiter)
+1. A multi char delimiter can be defined on the first line starting with `//` (e.g. `//###\n1###2` for ‘###’ as the delimiter)
 
 ## Prime Factors
 
 Made popular by [Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata).
 
-This kata demonstrates the [`transformation priority premise`](https://en.wikipedia.org/wiki/Transformation_Priority_Premise).
+***This kata demonstrates the [`transformation priority premise`](https://en.wikipedia.org/wiki/Transformation_Priority_Premise).***
 
 Write a function `generate` that, given an integer, returns the list
 containing the prime factors in numerical sequence.
@@ -90,8 +90,7 @@ containing the prime factors in numerical sequence.
 
 See the original [presentation](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata).
 
-This kata demonstrates the power of doing tests first, and how up-front design decisions can change
-and give way to a simpler implementation by coding iteratively.
+***This kata demonstrates the power of doing tests first, and how up-front design decisions can change and give way to a simpler implementation by coding iteratively.***
 
 Write a `BowlingGame` object with methods `roll(pins)` and `getScore()`.
 
