@@ -9,4 +9,7 @@ describe('prime factors kata', () => {
   it('should return [3] for 3',  () => {
     expect(primeFactors(3)).toEqual([3])
   })
+  it('should return [2,2] for 4',  () => {
+    expect(primeFactors(4)).toEqual([2,2])
+  })
 })
