@@ -27,4 +27,7 @@ describe('prime factors kata', () => {
   it('should return [3,3] for 9',  () => {
     expect(primeFactors(8)).toEqual([2,2,2])
   })
+  it('should return [2,2,3,5,7,11] for 4620',  () => {
+    expect(primeFactors(4620)).toEqual([2,2,3,5,7,11])
+  })
 })
