@@ -22,4 +22,7 @@ describe("primeFactors Kata", () => {
   it("7 should return `[7]`", () => {
     expect(primeFactors(7)).toEqual([7]);
   });
+  it("8 should return `[2, 2, 2]`", () => {
+    expect(primeFactors(8)).toEqual([2, 2, 2]);
+  });
 });
